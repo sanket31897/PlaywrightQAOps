@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","20982","@Web Playwright special locators","","2026-10-14","passed","2026-10-14","","llc.spec.js","",""
+"","11198","@Web Register and Login for ZARA COAT 3","","2026-10-14","passed","2026-10-14","","clientPagePO.spec.js","",""
+"","15432","@Web Register and Login for ADIDAS ORIGINAL","","2026-10-14","failed","2026-10-14","","clientPagePO.spec.js","",""
