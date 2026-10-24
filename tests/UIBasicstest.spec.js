@@ -65,6 +65,7 @@ test('UI Controls', async({page})=>
       //Select a specific radiobutton
       await page.locator(".radiotextsty").nth(1).click();
       await page.locator("#okayBtn").click();
+      await expect(page.locator("div div[class=modal-body]")).toBeHidden();
       console.log(await page.locator(".radiotextsty").nth(1).isChecked());
       await expect(page.locator(".radiotextsty").nth(1)).toBeChecked();
       //Select a checkbox
