@@ -3,6 +3,7 @@ const { POManager } = require('../pageObjects/POManager');
 const dataset = JSON.parse(JSON.stringify(require('../utils/placeOrderTestData.json')));
 const { customtest } = require('../utils/custom-testdata.js');
 
+//test.describe.configure({mode:'parallel'});
 for (const data of dataset) {
    test(`@Web Register and Login for ${data.productName}`, async ({ page }) => {
       const poManager = new POManager(page);
