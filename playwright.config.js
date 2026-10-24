@@ -11,15 +11,15 @@ const config =({
   //workers:15,
   //fullyparallel:true,
   retries:1,
-  timeout: 300000,
+  timeout: 24000,
   expect: {
-    timeout: 10000
+    timeout: 8000
   },
       reporter: 'html',
       
   use: {
-       actionTimout: 30000,
-       navigationTimout: 15000,
+       actionTimout: 25000,
+       navigationTimout: 12000,
        screenshot :'only-on-failure',
        trace :  'on',  
        video:'retain-on-failure',                              //'on'
