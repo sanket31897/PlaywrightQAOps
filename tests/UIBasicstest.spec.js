@@ -51,7 +51,7 @@ test('Browser Playwright Test', async ({browser})=>
     
 });
 
-test('UI Controls', async({page})=>
+test.only('UI Controls', async({page})=>
 {
  await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
       const userName = page.locator('#username');

@@ -3,7 +3,7 @@ const {test, expect} = require('@playwright/test')
 
 
 
-test('event booking',async({page})=>{
+test.only('event booking',async({page})=>{
 
 //Login
 await page.goto("https://eventhub.rahulshettyacademy.com/login");
