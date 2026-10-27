@@ -1,7 +1,7 @@
 const {test, expect}= require('@playwright/test');
 
 
-test('Browser Playwright Test', async ({browser})=>
+test.only('Browser Playwright Test', async ({browser})=>
     {
       const context = await browser.newContext();
       const page = await context.newPage();
@@ -51,7 +51,7 @@ test('Browser Playwright Test', async ({browser})=>
     
 });
 
-test.only('UI Controls', async({page})=>
+test('UI Controls', async({page})=>
 {
  await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
       const userName = page.locator('#username');
