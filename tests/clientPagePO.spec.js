@@ -48,7 +48,7 @@ for (const data of dataset) {
 
 
 
-customtest.only('Register and Login', async ({ page, testDataforOrder }) => {
+customtest('Register and Login', async ({ page, testDataforOrder }) => {
    const poManager = new POManager(page);
    const login = poManager.getLogin();
    const products = page.locator(".card-body");

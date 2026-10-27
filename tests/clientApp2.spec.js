@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 
 
 
-test('Client app other ways', async({page})=>{
+test.only('Client app other ways', async({page})=>{
 const products = page.locator(".card-body");
 const productName = 'ZARA COAT 3';
 const email = "ef@nlk.com";
@@ -27,7 +27,7 @@ await page.getByText("Place Order ").click();
 expect(await page.getByText("Thankyou for the order.")).toContainText("Thankyou for the order.")
 expect(await page.getByText("Thankyou for the order.")).toBeVisible();
 
-await page.waitForTimeout(8000);
+
 
 
 
