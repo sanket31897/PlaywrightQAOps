@@ -47,7 +47,7 @@ test.only('Browser Playwright Test', async ({browser})=>
       await expect(cardTitles.first()).toBeVisible();
       const allTitles= await cardTitles.allTextContents();
       console.log(allTitles);
-
+      console.log("Sanket Fixed this test.");
     
 });
 
