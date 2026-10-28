@@ -16,7 +16,7 @@ test.beforeAll(async () => {
 });
 
 
-test('Login and Create order by api', async ({ page }) => {
+test.only('Login and Create order by api', async ({ page }) => {
     await page.addInitScript(value => {
         window.localStorage.setItem('token', value);
     }, tokenn);
